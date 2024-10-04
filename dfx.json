@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "evm_rpc": {
+      "type": "pull",
+      "id": "7hfb6-caaaa-aaaar-qadga-cai"
+    },
+    "backend": {
+      "dependencies": ["evm_rpc"],
+      "type": "motoko",
+      "main": "backend/main.mo",
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "frontend": {
+      "dependencies": [
+        "backend"
+      ],
+      "entrypoint": "frontend/index.html",
+      "source": [ "frontend/dist" ],
+      "type": "assets"
+    }
+  },
+  "version": 1
+}
