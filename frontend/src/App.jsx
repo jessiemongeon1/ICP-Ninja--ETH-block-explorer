@@ -1,4 +1,4 @@
-import '../src/assets/index.css';
+import '../index.css';
 import React from 'react';
 
 // JSON viewer component
