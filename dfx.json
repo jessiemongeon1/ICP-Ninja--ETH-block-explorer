@@ -1,11 +1,6 @@
 {
   "canisters": {
-    "evm_rpc": {
-      "type": "pull",
-      "id": "7hfb6-caaaa-aaaar-qadga-cai"
-    },
     "backend": {
-      "dependencies": ["evm_rpc"],
       "type": "motoko",
       "main": "backend/main.mo",
       "declarations": {
